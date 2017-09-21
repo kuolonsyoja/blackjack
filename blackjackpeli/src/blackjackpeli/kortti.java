@@ -1,0 +1,9 @@
+
+package blackjackpeli;
+
+class kortti {
+    
+    
+    
+    
+}
