@@ -26,5 +26,6 @@ public class kortti {
         public int getMaa(){
             return maa;
 }
+        
 }
  
