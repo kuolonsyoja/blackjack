@@ -1,35 +1,24 @@
-
 package blackjackpeli;
 
 public class kortti {
-    
-   private int arvo;
-        private String maa;
-    
-         
-        
-       
-@Override
-public String toString() {
-    return cardValue + " of " + suit;
-}
 
+    private int arvo;
+    private String maa;
 
-public card(String suit, String cardValue) {
-    this.suit = suit;
-    this.cardValue = cardValue;
-}
+    @Override
+    public String toString() {
+        return arvo + maa;
+    }
 
+    public kortti(String maa, int arvo) {
+        this.maa = maa;
+        this.arvo = arvo;
+    }
 
-public card(String cardValue) {
-    this.cardValue = cardValue;
-}
+    public String getSuit() {
+        return maa;
+    }
 
-public String getSuit() {
-    return suit;
-}
-
-public void setSuit(String suit) {
-    this.suit = suit;
-}
- 
+    public void setSuit(String maa) {
+        this.maa = maa;
+    }
