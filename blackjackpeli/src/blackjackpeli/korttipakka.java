@@ -9,16 +9,16 @@ public class korttipakka {
 
     public ArrayList<kortti> kortit = new ArrayList<>();
 
-    String[] arvot = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "jätkä", "kuningatar", "kuningas"};
+ 
+   
+
+   public korttipakka() {
+   String[] arvot = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "jätkä", "kuningatar", "kuningas"};
     String[] maat = {"pata", "hertta", "risti", "ruutu"};
     int[] korttienarvo = {2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10};
-    korttipakka k = new korttipakka(arvot, maat, korttienarvo);
-
-    private korttipakka(String[] arvot, String[] maat, int[] korttienarvo) {
-
     }
 
-    static void shuffleArray(int[] pakka) {
+    public void shuffleArray() {
         Random arpoja = new Random();
         for (int i = pakka.length - 1; i > 0; i--) {
             int index = arpoja.nextInt(i + 1);

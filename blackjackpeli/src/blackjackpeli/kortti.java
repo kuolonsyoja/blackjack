@@ -25,7 +25,7 @@ public class kortti {
     
      public int getArvo() {
         return arvo;
-    
+     }
 
     public void setArvo(int arvo) {
         this.arvo = arvo;
