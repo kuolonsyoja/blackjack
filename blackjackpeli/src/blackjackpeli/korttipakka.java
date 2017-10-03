@@ -12,12 +12,17 @@ public class korttipakka {
  
    
 
-   public korttipakka() {
+   public korttipakka(int pakkojenmaara) {
    String[] arvot = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "jätkä", "kuningatar", "kuningas"};
     String[] maat = {"pata", "hertta", "risti", "ruutu"};
     int[] korttienarvo = {2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10};
     }
-
+   
+     public void poistakortti(){
+        this.kortit.remove(0);
+        return
+    }
+     
     public void shuffleArray() {
         Random arpoja = new Random();
         for (int i = pakka.length - 1; i > 0; i--) {
