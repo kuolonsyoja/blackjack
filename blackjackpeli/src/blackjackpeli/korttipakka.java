@@ -13,12 +13,14 @@ public class korttipakka {
    
 
    public korttipakka(int pakkojenmaara) {
-   String[] arvot = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "jätkä", "kuningatar", "kuningas"};
+   String[] arvot = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "jätkä", "kuningatar", "kuningas", "ässä"};
     String[] maat = {"pata", "hertta", "risti", "ruutu"};
-    int[] korttienarvo = {2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10};
+    int[] korttienarvo = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14};
+    
+    for
     }
    
-     public void poistakortti(){
+     public kortti poistakortti(){
         this.kortit.remove(0);
         return
     }

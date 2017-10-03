@@ -22,6 +22,7 @@ public class kortti {
     public void setSuit(String maa) {
         this.maa = maa;
     
+    }
     
      public int getArvo() {
         return arvo;
@@ -37,4 +38,4 @@ public class kortti {
     
     
     
-}
+
