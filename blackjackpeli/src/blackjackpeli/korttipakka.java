@@ -17,7 +17,12 @@ public class korttipakka {
     String[] maat = {"pata", "hertta", "risti", "ruutu"};
     int[] korttienarvo = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14};
     
-    for
+    for(int i=2; i<=14; i++){
+        kortit.add(new kortti("pata", i));
+          kortit.add(new kortti("hertta", i));
+            kortit.add(new kortti("risti", i));
+              kortit.add(new kortti("ruutu", i));
+    }
     }
    
      public kortti poistakortti(){
