@@ -27,7 +27,7 @@ public class korttipakka {
      
     public void shuffleArray() {
         Random arpoja = new Random();
-        for (int i = pakka.length - 1; i > 0; i--) {
+        for (int i = .length - 1; i > 0; i--) {
             int index = arpoja.nextInt(i + 1);
 
             int a = pakka[index];
