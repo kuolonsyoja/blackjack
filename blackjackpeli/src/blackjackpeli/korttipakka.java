@@ -10,8 +10,7 @@ public class korttipakka {
 
     public ArrayList<kortti> kortit = new ArrayList<>();
 
- 
-   
+
 
    public korttipakka(int pakkojenmaara) {
    String[] arvot = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "jätkä", "kuningatar", "kuningas", "ässä"};
@@ -30,11 +29,12 @@ public class korttipakka {
      public kortti poistakortti(){
         this.kortit.remove(0);
         return
+                shuffleArray(kortit);
     }
      
-    public void shuffleArray() {
+    public void shuffleArray(int[] kortit) {
         Random arpoja = new Random();
-        for (int i = .length - 1; i > 0; i--) {
+        for (int i = kortit.length - 1; i > 0; i--) {
             int index = arpoja.nextInt(i + 1);
 
             int a = kortit[index];
@@ -44,5 +44,6 @@ public class korttipakka {
         }
 
     }
+    
 
 }
