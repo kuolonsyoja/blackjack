@@ -3,6 +3,7 @@ package blackjackpeli;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Random;
+import static javafx.beans.binding.Bindings.length;
 import static javafx.scene.input.KeyCode.K;
 
 public class korttipakka {
@@ -22,6 +23,7 @@ public class korttipakka {
           kortit.add(new kortti("hertta", i));
             kortit.add(new kortti("risti", i));
               kortit.add(new kortti("ruutu", i));
+              
     }
     }
    
@@ -35,9 +37,9 @@ public class korttipakka {
         for (int i = .length - 1; i > 0; i--) {
             int index = arpoja.nextInt(i + 1);
 
-            int a = pakka[index];
-            pakka[index] = pakka[i];
-            pakka[i] = a;
+            int a = kortit[index];
+            kortit[index] = kortit[i];
+            kortit[i] = a;
 
         }
 
