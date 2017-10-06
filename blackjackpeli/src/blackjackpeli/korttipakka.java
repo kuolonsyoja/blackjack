@@ -27,11 +27,22 @@ public class korttipakka {
     }
    
      public kortti poistakortti(){
-        this.kortit.remove(0);
-        return
-                shuffleArray(kortit);
+        return this.kortit.remove(0);
+                    
     }
-     
+         public void lisaaKortti(kortti tyyppi){
+        this.kortit.add(tyyppi);
+         }
+      @Override
+    public String toString(){
+    String palautus = kortit+"\n";
+     for(kortti tyyppi:this.kortit){
+            palautus += tyyppi+"\n";
+        }
+        return palautus;        
+    }
+    
+    
     public void shuffleArray(int[] kortit) {
         Random arpoja = new Random();
         for (int i = kortit.length - 1; i > 0; i--) {
